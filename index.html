@@ -3,43 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mark Ainamani Jr| Freelance Services</title>
+  <title>Mark Ainamani Jr | Freelance Services</title>
 
-  <!-- Google Fonts: Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <!-- Google Fonts: Poppins & Pacifico -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet" />
 
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Make brand logos bigger with !important to override other styles */
+    .brands-grid .brand-item img {
+      max-width: 200px !important;
+      height: auto !important;
+      display: block !important;
+      margin: 0 auto !important;
+      transition: transform 0.3s ease !important;
+    }
+    .brands-grid .brand-item img:hover {
+      transform: scale(1.1) !important;
+    }
+
+    /* Video wrapper to preserve aspect ratio */
+    .video-wrapper {
+      position: relative;
+      padding-top: 56.25%; /* 16:9 ratio */
+      overflow: hidden;
+      border-radius: 10px;
+      background: #000;
+    }
+    .video-wrapper video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 10px;
+    }
+    .portfolio-grid .portfolio-item {
+      position: relative;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <div class="hero-content" data-aos="fade-down" data-aos-duration="1000">
-      <img src="images/WhatsApp Image 2025-06-10 at 11.28.09.jpeg" alt="WhatsApp Image 2025-06-10 at 11.28.09" class="profile-pic" />
-      <h1>Mark Ainamani Jr</h1>
-      <p>I help brands grow through effective social media management and engaging video content.</p>
+      <img src="WhatsApp_Image_2025-06-17_at_14.21.13__2_-removebg-preview.png" alt="Portrait of Mark Ainamani Jr" class="profile-pic" />
+      <h1>MARK JUNIOR</h1>
+      <p class="hero-sub">I help grow company's brands through social media marketing and content creation.</p>
+      <p style="font-size: 1.1rem; margin-top: 15px; font-weight: 500;">
+        Let’s connect and bring your brand’s vision to life.
+      </p>
       <a 
-    href="https://www.upwork.com" 
-    style="
-      display: inline-block;
-      padding: 12px 25px;
-      background-color: #ff66b2;
-      color: white;
-      font-family: 'Pacifico', cursive;
-      text-decoration: none;
-      border-radius: 30px;
-      font-size: 18px;
-      box-shadow: 0 4px 8px rgba(255, 102, 178, 0.3);
-      transition: all 0.3s ease;
-      margin-top: 50px; /* Adds space above the button */
-    "
-    target="_blank"
-  >
-    ORDER NOW ON UPWORK
-  </a>
-      
+        href="mailto:markdaniel83411@gmail.com" 
+        class="btn"
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        Contact Me
+      </a>
     </div>
 
     <!-- Wave SVG -->
@@ -49,55 +76,149 @@
   </header>
 
   <main>
+    <!-- About -->
     <section id="about" data-aos="fade-up" data-aos-duration="1000">
       <h2>About Me</h2>
-      <p>Your company’s online presence has never been more important than it is today. I’m a professional Social Media Manager with a passion for helping brands grow online. I have over 7 years experience in social media world. I know how the social media algorithm works and I specialize in managing Instagram, Facebook, TikTok, linkedin, Twitter/X etc through creating engaging content, building communities.
-
-<p>What to expect from me!</p>
-<p>• Create and manage content<p></p>
-<p>• Write compelling captions and research top hashtags for boosted visibility<p></p>
-<p>• Design eye-catching visuals using Canva and Capcut<p></p>
-<p>• Track analytics and optimize performance<p></p>
-<p>• Run and monitor social media ads</p>
-<p>Let’s grow your brand together!</p>
+      <p>Your company’s online presence has never been more important than it is today. I’m a professional Social Media Manager with a passion for helping brands grow online. I have over 7 years experience in the social media world. I know how the social media algorithm works and I specialize in managing Instagram, Facebook, TikTok, LinkedIn, Twitter/X, etc., through creating engaging content and building communities.</p>
+      <p><strong>What to expect from me:</strong></p>
+      <ul>
+        <li>Create and manage social media accounts</li>
+        <li>Create and edit social media content</li>
+        <li>Write compelling captions and research top hashtags for boosted visibility</li>
+        <li>Design eye-catching visuals using Canva and CapCut</li>
+        <li>Track analytics and optimize performance</li>
+        <li>Run and monitor social media ads</li>
+      </ul>
+      <p>Let’s grow your brand together!</p>
     </section>
 
+    <!-- Services -->
     <section id="services" data-aos="fade-up" data-aos-duration="1200">
       <h2>What I Do</h2>
-      <ul>
-        <div class="portfolio-grid">
-        <li><strong>Social Media Management</strong> Content creation and planning, posting, liking and commenting, compelling captions and top hashtags, Track analytics, optimize performance and community engagement</li> 
-        <li><strong>Video Editing</strong> – YouTube Shorts, Reels, TikToks with captions, effects & music. Design eye-catching visuals using Canva and Capcut. Run and monitor social media ads and use of powerful ai tools.</li> <img src="images/1f12c144-8206-4da8-bcf0-6c0e2f185996.jpeg" alt="1f12c144-8206-4da8-bcf0-6c0e2f185996"/>
-      </ul>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Social Media Management</h3>
+          <p>Manage social media accounts, content creation and planning, posting, engagement (liking/commenting), compelling captions and top hashtags, analytics tracking, performance optimization, and community building.</p>
         </div>
-    </section>
-
-    <section id="portfolio" data-aos="fade-up" data-aos-duration="1400">
-      <h2>My Work</h2>
-      <div class="portfolio-grid">
-        <img src="images/CAPCUT .jpeg" alt="CAPCUT"/>
-        <img src="images/xx.jpeg" alt="xx">
-        <img src="images/ana.jpeg" alt="ana">
-        <img src="images/qqq.jpeg" alt="qqq">
-        <img src="images/new.jpeg" alt="new">
-        <img src="images/how.jpeg" alt="how">
+        <div class="service-item">
+          <h3>Video Editing</h3>
+          <p>YouTube Shorts, Reels, TikToks with captions, effects & music. Eye-catching visuals using Canva and CapCut. Running and monitoring ads using powerful AI tools.</p>
+        </div>
       </div>
     </section>
 
-    <section id="contact" data-aos="fade-up" data-aos-duration="1600">
+    <!-- Portfolio with local videos -->
+    <section id="portfolio" data-aos="fade-up" data-aos-duration="1400">
+      <h2>My Work</h2>
+      <div class="portfolio-grid">
+        <!-- Local Video 1 -->
+        <div class="portfolio-item" data-category="video">
+          <div class="video-wrapper">
+            <video controls preload="metadata" poster="images/video1-poster.jpg">
+              <source src="wtkgzcdsc2pzgwhrt3dc.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Local Video 2 -->
+        <div class="portfolio-item" data-category="video">
+          <div class="video-wrapper">
+            <video controls preload="metadata" poster="images/video2-poster.jpg">
+              <source src="vijceemlmq6vdzroft7e.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Image examples -->
+        <div class="portfolio-item" data-category="social">
+          <img src="Screenshot from 2025-08-01 20-24-26.png" alt="Social media post example" loading="lazy" />
+        </div>
+        <div class="portfolio-item" data-category="ads">
+          <img src="Screenshot from 2025-08-01 20-23-28.png" alt="Ad campaign visual" loading="lazy" />
+        </div>
+        <div class="portfolio-item" data-category="ads">
+          <img src="Screenshot from 2025-08-01 20-26-18.png" alt="Ad campaign visual" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands Worked With -->
+    <section id="brands" data-aos="fade-up" data-aos-duration="1400">
+      <h2>Brands I've Worked With</h2>
+      <div class="brands-grid">
+        <div class="brand-item">
+          <img src="_.jpeg" alt="Brand 1 logo" loading="lazy" />
+        </div>
+        <div class="brand-item">
+          <img src="_ (1).jpeg" alt="Brand 2 logo" loading="lazy" />
+        </div>
+        <div class="brand-item">
+          <img src="Luxury golden star logo symbol vector designs template, elegant style black background _ Premium Vector.jpeg" alt="Brand 3 logo" loading="lazy" />
+        </div>
+        <div class="brand-item">
+          <img src="Order Now For Custom Logo Design.jpeg" alt="Brand 4 logo" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Feedback (two horizontal screenshots) -->
+    <section id="testimonials" data-aos="fade-up" data-aos-duration="1600">
+      <h2>Client Feedback</h2>
+      <img 
+        src="WhatsApp Image 2025-08-01 at 14.54.59 (1).jpeg" 
+        alt="Client feedback screenshot 1" 
+        style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 20px;" 
+        loading="lazy" 
+      />
+      <img 
+        src="WhatsApp Image 2025-08-01 at 14.54.59 (5).jpeg" 
+        alt="Client feedback screenshot 2" 
+        style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" 
+        loading="lazy" 
+      />
+    </section>
+
+    <!-- Resume / CV -->
+    <section id="resume" data-aos="fade-up" data-aos-duration="1800">
+      <h2>Resume / CV</h2>
+      <p>Download or preview my full resume to see experience, skills, and results. <span class="small">Last updated: July 2025</span></p>
+      <div class="resume-actions">
+        <a href="MARK JUNIOR (1).pdf" download class="btn">
+          Download Resume (PDF)
+        </a>
+        <div class="embed-wrapper">
+          <iframe
+            src="MARK JUNIOR (1).pdf"
+            title="Resume Preview"
+            loading="lazy"
+            width="100%"
+            height="500"
+            style="border:1px solid #ddd; border-radius:10px;"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" data-aos="fade-up" data-aos-duration="1800">
       <h2>Let's Connect</h2>
-      <p>Email: markdaniel83411@gmail.com</p>
-      <p>WhatsApp: +256-785-546-219</p>
-      <p>Instagram: mark_jr</p>
-      <a href="https://www.upwork.com" 
-   style="display: inline-block; padding: 10px 20px; background-color: #14a800; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" 
-   target="_blank">
-   ORDER NOW ON UPWORK
-</a>
+      <p>Email: <a href="mailto:markdaniel83411@gmail.com">markdaniel83411@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/256785546219" target="_blank" rel="noopener noreferrer">+256 785 546 219</a></p>
+      <p>Instagram: <a href="https://instagram.com/mark_jr" target="_blank" rel="noopener noreferrer">@mark_jr</a></p>
+      <div class="cta-row">
+        <a href="https://www.upwork.com/freelancers/~01d0dfb6fb31d2d264?mp_source=share" class="btn" target="_blank" rel="noopener noreferrer">
+          ORDER NOW ON UPWORK
+        </a>
+        <a href="https://www.fiverr.com/s/jj8Wevw" class="btn btn-fiverr" target="_blank" rel="noopener noreferrer">
+          ORDER NOW ON FIVERR
+        </a>
+      </div>
     </section>
   </main>
 
-  
+  <footer>
     <p>&copy; 2025 Mark Ainamani Jr. All rights reserved.</p>
   </footer>
 
@@ -105,9 +226,31 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
-  </script>
 
-</a>
+    // Portfolio filtering (if filter controls added back)
+    const filterButtons = document.querySelectorAll('.filter-controls button');
+    const items = document.querySelectorAll('.portfolio-item');
+
+    function setActive(btn) {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+        setActive(btn);
+        items.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
+
 
